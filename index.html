@@ -156,7 +156,7 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
         <div class="about__container container grid">
-          <img src="assets/img" alt="" class="about__img" />
+          <img src="assets/img/profile.jpg" alt="" class="about__img" />
           <div class="about__data">
             <p class="about__description">
               Web developer, with extensive knowledge and years of experience,
@@ -531,15 +531,7 @@
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
                     <p>I create the Ux element interactions.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I position your company brand.</p>
                   </li>
                 </ul>
               </div>
@@ -573,19 +565,11 @@
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
+                    <p>I create responsive web-design.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create the Ux element interactions.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I position your company brand.</p>
+                    <p>I optimize the performance of your applicaiton.</p>
                   </li>
                 </ul>
               </div>
@@ -619,15 +603,7 @@
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create the Ux element interactions.</p>
+                    <p>I capture the vision and values of your brand.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
@@ -651,11 +627,7 @@
           <div class="swiper-wrapper">
             <!--==================== PROJECT 1 ====================-->
             <div class="project__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio1.png"
-                alt=""
-                class="project__img"
-              />
+              <img src="assets/img/project1.png" alt="" class="project__img" />
               <div class="project__data">
                 <h3 class="project__title">FitTrack Workout Journal App</h3>
                 <p class="project__description">
@@ -673,11 +645,7 @@
             <!--End of project__content 1 -->
             <!--==================== PROJECT 2 ====================-->
             <div class="project__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio2.png"
-                alt=""
-                class="project__img"
-              />
+              <img src="assets/img/project2.png" alt="" class="project__img" />
               <div class="project__data">
                 <h3 class="project__title">Stock Tracker Web App</h3>
                 <p class="project__description">
@@ -696,11 +664,7 @@
             <!--End of project__content 2 -->
             <!--==================== PROJECT 3 ====================-->
             <div class="project__content grid swiper-slide">
-              <img
-                src="assets/img/portfolio3.png"
-                alt=""
-                class="project__img"
-              />
+              <img src="assets/img/project3.png" alt="" class="project__img" />
               <div class="project__data">
                 <h3 class="project__title">My Portfolio</h3>
                 <p class="project__description">
@@ -875,36 +839,54 @@
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__content">Name</label>
-                <input type="text" class="contact__input" />
+                <input
+                  type="text"
+                  class="contact__input"
+                  autocomplete="off"
+                />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__content">Email</label>
-                <input type="email" class="contact__input" />
+                <input
+                  type="email"
+                  class="contact__input"
+                  autocomplete="off"
+                />
               </div>
             </div>
 
             <div class="contact__content">
               <label for="" class="contact__content">Project</label>
-              <input type="text" class="contact__input" />
+              <input
+                type="text"
+                class="contact__input"
+                autocomplete="off"
+              />
             </div>
             <div class="contact__content">
               <label for="" class="contact__content">Message</label>
               <textarea
                 name=""
-                id=""
+                id="message"
                 cols="0"
                 rows="0"
                 class="contact__input"
+                autocomplete="off"
               ></textarea>
             </div>
 
             <div>
-              <a href="#" class="button button-flex">
+              <button class="button button-flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
           </form>
+
+          <p class="contact__confirmation" id="confirmation">
+            Message Sent
+            <i class="uil uil-check-circle button__icon"></i>
+          </p>
         </div>
       </section>
     </main>

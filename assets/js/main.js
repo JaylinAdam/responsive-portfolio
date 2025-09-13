@@ -231,3 +231,35 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== DOM CONTENT LOADED ====================*/
+document.addEventListener("DOMContentLoaded", () => {
+  /*===== SEND MESSAGE =====*/
+  const form = document.querySelector(".contact__form"),
+    inputs = document.querySelectorAll(".contact__input"),
+    confirmation = document.getElementById("confirmation");
+
+  inputs.forEach((input) => {
+    if (input.value.trim() === "") return;
+  });
+
+  form.addEventListener("submit", (e) => {
+    // Stop page reload
+    e.preventDefault();
+
+    // Prevent empty submission
+    const hasEmpty = Array.from(inputs).some(
+      (input) => input.value.trim() === ""
+    );
+    if (hasEmpty) return;
+
+    // Clear text fields
+    inputs.forEach((input) => (input.value = ""));
+
+    // Confirmation message
+    confirmation.style.display = "block";
+    setTimeout(() => {
+      confirmation.style.display = "none";
+    }, 2000);
+  });
+});
