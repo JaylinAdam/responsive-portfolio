@@ -23,7 +23,6 @@ if (navClose) {
     if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
       navMenu.classList.remove("show-menu");
     }
-    console.log(e.target);
   });
 
   // Close menu on Escape key press
